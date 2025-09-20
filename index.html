@@ -9,6 +9,18 @@
       href="./assets/icons/icons8-hatchback-16.ico"
       type="image/x-icon"
     />
+    <style>
+      table,
+      thead,
+      tbody {
+        border: 5px solid rgb(0, 0, 0);
+        border-collapse: separate;
+      }
+      th,
+      td {
+        border: 2px solid rgb(3, 3, 3);
+      }
+    </style>
   </head>
 
   <body>
@@ -18,9 +30,11 @@
           <li><a href="#Honda">Honda</a></li>
           <li><a href="#Skoda">Škoda</a></li>
           <li><a href="#Toyota">Toyota</a></li>
+          <li><a href="#TTH">Технічні характеристики</a></li>
+          <li><a href="./form.html">Замовити</a></li>
         </ul>
       </nav>
-      <div><img src="./assets/images/icons8-garage-100.img" alt="logo"></div>
+      <div><img src="./assets/images/icons8-garage-100.img" alt="logo" /></div>
     </header>
 
     <main>
@@ -31,12 +45,12 @@
       </p>
 
       <article id="Honda">
-        <a href="#headerbutton"> Назад до головного меню </a>
+        <a href="#top"> Назад до головного меню </a>
         <h2>
-          <img src="./assets/icons/icons8-honda-32.ico" alt="logo honda" >
+          <img src="./assets/icons/icons8-honda-32.ico" alt="logo honda" />
           Honda
         </h2>
-        <section title="Історія">
+        <section>
           <h3>Історія</h3>
           <p>
             Компанія заснована 24 вересня 1948 року, засновник — Соічіро Хонда.
@@ -67,7 +81,7 @@
             сучасним дизайном в стилях «спорт» та «техно»).
           </p>
         </section>
-        <section title="Моделі">
+        <section>
           <h3>Моделі</h3>
           <h4>Honda CIVIC Гібрид</h4>
           <p>
@@ -128,7 +142,7 @@
             зігрітись від морозів допомагає підігрів сидінь та керма.
           </p>
         </section>
-        <section title="Відгуки">
+        <section>
           <h3>Відгуки</h3>
           <h4>Власники про Honda CIVIC Гібрид</h4>
           <p>
@@ -153,12 +167,12 @@
         </section>
       </article>
       <article id="Skoda">
-        <a href="#headerbutton"> Назад до головного меню </a>
+        <a href="#top"> Назад до головного меню </a>
         <h2>
-          <img src="./assets/icons/icons8-skoda-32.ico" alt="logo Skoda" >
+          <img src="./assets/icons/icons8-skoda-32.ico" alt="logo Skoda" />
           Škoda
         </h2>
-        <section title="Історія">
+        <section>
           <h3>Історія</h3>
           <p>
             Škoda - чеський виробник автомобілів та двигунів з міста
@@ -168,7 +182,7 @@
             світу.
           </p>
         </section>
-        <section title="Моделі">
+        <section>
           <h3>Моделі</h3>
           <h4>Škoda Octavia Scout</h4>
           <p>
@@ -205,7 +219,7 @@
             заднього виду, система утримання в полосі.
           </p>
         </section>
-        <section title="Відгуки">
+        <section>
           <h3>Відгуки</h3>
           <h4>Власники про Škoda Octavia Scout</h4>
           <p>
@@ -230,12 +244,12 @@
         </section>
       </article>
       <article id="Toyota">
-        <a href="#headerbutton"> Назад до головного меню </a>
+        <a href="#top"> Назад до головного меню </a>
         <h2>
-          <img src="./assets/icons/icons8-toyota-32.ico" alt="logo Toyota" >
+          <img src="./assets/icons/icons8-toyota-32.ico" alt="logo Toyota" />
           Toyota
         </h2>
-        <section title="Історія">
+        <section>
           <h3>Історія</h3>
           <p>
             Toyota Motor Corporation — японська автомобільна корпорація, що
@@ -260,7 +274,7 @@
             рік тому.
           </p>
         </section>
-        <section title="Моделі">
+        <section>
           <h3>Моделі</h3>
           <h4>Yaris Cross</h4>
           <p>
@@ -284,7 +298,7 @@
             — незалежно від умов та місця призначення.
           </p>
         </section>
-        <section title="Відгуки">
+        <section>
           <h3>Відгуки</h3>
           <h4>Власники про Yaris Cross</h4>
           <p>
@@ -306,14 +320,87 @@
           </p>
         </section>
       </article>
+      <article id="TTH">
+        <a href="#top"> Назад до головного меню </a>
+        <h2>Технічні характеристики</h2>
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Бренд</th>
+              <th rowspan="2">Модель</th>
+              <th rowspan="2">Країна</th>
+              <th colspan="2">Вага, кг</th>
+              <th rowspan="2">Макс.швидкість</th>
+              <th rowspan="2">Дата релізу</th>
+            </tr>
+            <tr>
+              <th>нетто</th>
+              <th>брутто</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2"><a href="#Honda">Honda</a></td>
+              <td>CIVIC</td>
+              <td>Японія</td>
+              <td>1597</td>
+              <td>2300</td>
+              <td>200</td>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <td>HEV</td>
+              <td>Японія</td>
+              <td>1050</td>
+              <td>1200</td>
+              <td>170</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><a href="#Skoda">Škoda</a></td>
+              <td>Octavia Scout</td>
+              <td>Чехія</td>
+              <td>1550</td>
+              <td>2050</td>
+              <td>190</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>Scala</td>
+              <td>Чехія</td>
+              <td>1560</td>
+              <td>2030</td>
+              <td>210</td>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><a href="#Toyota">Toyota</a></td>
+              <td>Yaris Cross</td>
+              <td>Японія</td>
+              <td>2150</td>
+              <td>2900</td>
+              <td>245</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Corolla Cross</td>
+              <td>Японія</td>
+              <td>2100</td>
+              <td>2300</td>
+              <td>225</td>
+              <td>2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
     </main>
 
     <footer>
       <h3>Контактна інформація</h3>
       <ul>
         <li>Адреса: м.Запоріжжя, проспект Соборний, 97</li>
-        <li><a href="mailto:test@test.com">Send email:test@test.com</a></li>
-        <li><a href="tel:+38.012.3456">+38 012 3456</a></li>
+        <li>Send email: <a href="mailto:test@test.com">test@test.com</a></li>
+        <li>Telephone: <a href="tel:+38.012.3456">+38 012 3456</a></li>
         <li><a href="https://www.mozilla.com">Mozilla</a></li>
       </ul>
     </footer>
