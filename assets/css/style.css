@@ -1,1 +1,12 @@
+datalist{
+    display: flex;
+}
 
+option:nth-child(5n+1){
+    padding-left: 65px;
+}
+
+input[type="range"]{
+    width: 240px;
+    margin: 0px;
+}

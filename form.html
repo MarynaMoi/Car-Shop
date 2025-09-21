@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Замовлення авто</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -34,14 +35,15 @@
           <input type="radio" id="male" name="Gender" required />
         </div>
         <div>
-          <label for="driveExpirience">Досвід вождіння</label>
-          <select id="driveExpirience" name="driveExpirience">
+          <label for="drive-experience">Досвід вождіння</label>
+          <select id="drive-experience" name="drive-experience">
             <option value="---" selected>---</option>
+            <option value="Beginner">Початківець</option>
             <option value="less-then-2">До 2-х років</option>
-            <option value="5">2 - 5 років</option>
-            <option value="10">5 - 10 років</option>
-            <option value="20">10 - 20 років</option>
-            <option value="20-or-more">Більше 20 років</option>
+            <option value="2-5">2 - 5 років</option>
+            <option value="5-10">5 - 10 років</option>
+            <option value="more-then-10">Більше 10 років</option>
+            <option value="Expert">Досвідчений водій</option>
           </select>
         </div>
       </fieldset>
@@ -113,16 +115,17 @@
             list="money"
           />
           <datalist id="money">
+            <option value="0">0 k</option>
             <option value="10000"></option>
             <option value="20000"></option>
             <option value="30000"></option>
             <option value="40000"></option>
-            <option value="50000"></option>
+            <option value="50000">50k</option>
             <option value="60000"></option>
             <option value="70000"></option>
             <option value="80000"></option>
             <option value="90000"></option>
-            <option value="100000"></option>
+            <option value="100000">100k</option>
           </datalist>
           <output name="outrange" id="outrange">50000</output>$
         </div>
