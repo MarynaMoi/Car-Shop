@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Замовлення авто</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
   </head>
   <body>
     <header>
@@ -92,7 +92,7 @@
         <div>
           <p>Колір</p>
           <label for="Red">Червоний</label>
-          <input type="radio" id="Red" name="color" />
+          <input type="radio" id="Red" name="color" required />
           <label for="Black">Чорний</label>
           <input type="radio" id="Black" name="color" />
           <label for="Blue">Блакитний</label>
@@ -115,17 +115,17 @@
             list="money"
           />
           <datalist id="money">
-            <option value="0">0 k</option>
+            <option value="0"></option>
             <option value="10000"></option>
             <option value="20000"></option>
             <option value="30000"></option>
             <option value="40000"></option>
-            <option value="50000">50k</option>
+            <option value="50000"></option>
             <option value="60000"></option>
             <option value="70000"></option>
             <option value="80000"></option>
             <option value="90000"></option>
-            <option value="100000">100k</option>
+            <option value="100000"></option>
           </datalist>
           <output name="outrange" id="outrange">50000</output>$
         </div>
