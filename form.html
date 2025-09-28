@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Замовлення авто</title>
-
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/icons8-hatchback-16.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -13,125 +18,132 @@
       <h2>Для замовлення заповніть, будь ласка, форму</h2>
     </header>
     <form oninput="outrange.value = range.value">
-      <fieldset>
-        <legend>Персональна інформація</legend>
-        <div>
-          <label for="f-name">Ім'я</label>
-          <input type="text" id="f-name" required />
-        </div>
-        <div>
-          <label for="l-name">Прізвище</label>
-          <input type="text" id="l-name" required />
-        </div>
-        <div>
-          <label for="birthday">Дата народження</label>
-          <input type="datetime-local" id="birthday" required />
-        </div>
-        <div>
-          <p>Стать</p>
-          <label for="female">Жіноча</label>
-          <input type="radio" id="female" name="Gender" required />
-          <label for="male">Чоловіча</label>
-          <input type="radio" id="male" name="Gender" required />
-        </div>
-        <div>
-          <label for="drive-experience">Досвід вождіння</label>
-          <select id="drive-experience" name="drive-experience">
-            <option value="---" selected>---</option>
-            <option value="Beginner">Початківець</option>
-            <option value="less-then-2">До 2-х років</option>
-            <option value="2-5">2 - 5 років</option>
-            <option value="5-10">5 - 10 років</option>
-            <option value="more-then-10">Більше 10 років</option>
-            <option value="Expert">Досвідчений водій</option>
-          </select>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>Контактна інформація</legend>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-        </div>
-        <div>
-          <label for="phone">Телефон</label>
-          <input type="tel" id="phone" required />
-        </div>
-        <div>
-          <label for="adress">Адреса</label>
-          <textarea id="adress" rows="6" cols="20" required></textarea>
-        </div>
-      </fieldset>
-      <fieldset>
-        <legend>Бажані параметри авто</legend>
-        <div>
-          <label for="brand">Бренд</label>
-          <select id="brand" name="brand">
-            <option value="---" selected>---</option>
-            <option value="Honda">Honda</option>
-            <option value="Škoda">Škoda</option>
-            <option value="Toyota">Toyota</option>
-          </select>
-        </div>
-        <div>
-          <label for="model">Модель</label>
-          <select id="model" name="model">
-            <option value="---" selected>---</option>
-            <option value="CIVIC">CIVIC</option>
-            <option value="HEV">HEV</option>
-            <option value="Octavia Scout">Octavia Scout</option>
-            <option value="Scala">Scala</option>
-            <option value="Yaris Cross">Yaris Cross</option>
-            <option value="Corolla Cross">Corolla Cross</option>
-          </select>
-        </div>
-        <div>
-          <label for="checkbox">Була у використанні</label>
-          <input type="checkbox" id="checkbox" />
-        </div>
-        <div>
-          <p>Колір</p>
-          <label for="Red">Червоний</label>
-          <input type="radio" id="Red" name="color" required />
-          <label for="Black">Чорний</label>
-          <input type="radio" id="Black" name="color" />
-          <label for="Blue">Блакитний</label>
-          <input type="radio" id="Blue" name="color" />
-          <label for="Write">Білий</label>
-          <input type="radio" id="Write" name="color" />
-          <label for="Grey">Зелений</label>
-          <input type="radio" id="Grey" name="color" />
-        </div>
-        <div>
-          <label for="range">Вартість</label>
-          <input
-            type="range"
-            id="range"
-            name="range"
-            min="0"
-            max="100000"
-            step="5000"
-            value="50000"
-            list="money"
-          />
-          <datalist id="money">
-            <option value="0"></option>
-            <option value="10000"></option>
-            <option value="20000"></option>
-            <option value="30000"></option>
-            <option value="40000"></option>
-            <option value="50000"></option>
-            <option value="60000"></option>
-            <option value="70000"></option>
-            <option value="80000"></option>
-            <option value="90000"></option>
-            <option value="100000"></option>
-          </datalist>
-          <output name="outrange" id="outrange">50000</output>$
-        </div>
-      </fieldset>
-      <input type="reset" value="Очистити поля" />
-      <button type="submit">OK</button>
+      <div class="flex-container">
+        <fieldset>
+          <legend>Персональна інформація</legend>
+          <div>
+            <label for="f-name">Ім'я</label>
+            <input type="text" id="f-name" required />
+          </div>
+          <div>
+            <label for="l-name">Прізвище</label>
+            <input type="text" id="l-name" required />
+          </div>
+          <div>
+            <label for="birthday">Дата народження</label>
+            <input type="datetime-local" id="birthday" required />
+          </div>
+          <div class="radio-container">
+            <p>Стать</p>
+            <label for="female">Жіноча</label>
+            <input type="radio" id="female" name="Gender" required />
+            <label for="male">Чоловіча</label>
+            <input type="radio" id="male" name="Gender" required />
+          </div>
+          <div>
+            <label for="drive-experience">Досвід водіння</label>
+            <select id="drive-experience" name="drive-experience">
+              <option value="---" selected>---</option>
+              <option value="Beginner">Початківець</option>
+              <option value="less-then-2">До 2-х років</option>
+              <option value="2-5">2 - 5 років</option>
+              <option value="5-10">5 - 10 років</option>
+              <option value="more-then-10">Більше 10 років</option>
+              <option value="Expert">Досвідчений водій</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Контактна інформація</legend>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div>
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" required />
+          </div>
+          <div>
+            <label for="adress">Адреса</label>
+            <textarea id="adress" rows="6" cols="20" required></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Бажані параметри авто</legend>
+          <div>
+            <label for="brand">Бренд</label>
+            <select id="brand" name="brand">
+              <option value="---" selected>---</option>
+              <option value="Honda">Honda</option>
+              <option value="Škoda">Škoda</option>
+              <option value="Toyota">Toyota</option>
+            </select>
+          </div>
+          <div>
+            <label for="model">Модель</label>
+            <select id="model" name="model">
+              <option value="---" selected>---</option>
+              <option value="CIVIC">CIVIC</option>
+              <option value="HEV">HEV</option>
+              <option value="Octavia Scout">Octavia Scout</option>
+              <option value="Scala">Scala</option>
+              <option value="Yaris Cross">Yaris Cross</option>
+              <option value="Corolla Cross">Corolla Cross</option>
+            </select>
+          </div>
+          <div>
+            <label for="checkbox">Була у використанні</label>
+            <input type="checkbox" id="checkbox" class="inp-check" />
+          </div>
+          <div class="radio-container">
+            <label for="Red">Червоний</label>
+            <input type="radio" id="Red" name="color" required />
+            <label for="Black">Чорний</label>
+            <input type="radio" id="Black" name="color" />
+            <label for="Blue">Блакитний</label>
+            <input type="radio" id="Blue" name="color" />
+            <label for="Write">Білий</label>
+            <input type="radio" id="Write" name="color" />
+            <label for="Grey">Зелений</label>
+            <input type="radio" id="Grey" name="color" />
+          </div>
+          <div class="range-container">
+            <div>
+              <label for="range">Вартість</label>
+              <output name="outrange" id="outrange">50</output>
+            </div>
+            <input
+              type="range"
+              id="range"
+              name="range"
+              min="0"
+              max="100"
+              step="5"
+              value="50"
+              list="money"
+            />
+
+            <datalist id="money">
+              <option value="0">0</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+              <option value="70">70</option>
+              <option value="80">80</option>
+              <option value="90">90</option>
+              <option value="100">100</option>
+            </datalist>
+            <p class="p-value">тисяч $</p>
+          </div>
+        </fieldset>
+      </div>
+      <div class="btn">
+        <input type="reset" value="Очистити поля" />
+        <button type="submit">OK</button>
+      </div>
     </form>
   </body>
 </html>
