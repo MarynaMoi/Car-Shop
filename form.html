@@ -110,16 +110,16 @@
           <div class="range-container">
             <div>
               <label for="range">Вартість</label>
-              <output name="outrange" id="outrange">50</output>
+              <output name="outrange" id="outrange">40</output>
             </div>
             <input
               type="range"
               id="range"
               name="range"
               min="0"
-              max="100"
+              max="80"
               step="5"
-              value="50"
+              value="40"
               list="money"
             />
 
@@ -133,16 +133,14 @@
               <option value="60">60</option>
               <option value="70">70</option>
               <option value="80">80</option>
-              <option value="90">90</option>
-              <option value="100">100</option>
             </datalist>
             <p class="p-value">тисяч $</p>
           </div>
         </fieldset>
       </div>
-      <div class="btn">
-        <input type="reset" value="Очистити поля" />
-        <button type="submit">OK</button>
+      <div class="btn-div">
+        <input type="reset" value="Відмінити" class="btn"/>
+        <button type="submit" class="btn">OK</button>
       </div>
     </form>
   </body>
